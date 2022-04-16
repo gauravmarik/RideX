@@ -1,3 +1,19 @@
+<!-- 15Apr My notes  -->
+
+1. Link the Back Button to go to the home page
+2. Create the Confirm Locations button
+3. Create the confirm page
+4. Plot a random point on a map
+5. Get Coordinates from a location 
+6. Add the pickup and dropoff as markers on the map
+7. Add a auto zoom to be able to zoom into the markers
+8. Pass in location data into confirm page
+9. Use the passed in data to put it on the map
+10. Create the HTML for the Ride Selector
+11. Add - Calculate the price of the ride
+12. Add a login
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
