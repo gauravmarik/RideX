@@ -11,7 +11,7 @@
 9. Use the passed in data to put it on the map
 10. Create the HTML for the Ride Selector
 11. Add - Calculate the price of the ride
-12. Add a login
+12. Add a login to
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
