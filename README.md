@@ -10,9 +10,11 @@
 8. Pass in location data into confirm page
 9. Use the passed in data to put it on the map
 10. Create the HTML for the Ride Selector
-11. Add - Calculate the price of the ride
-12. Add a login to
-
+11. Add - Calculate the ride fare price
+12. Add a login
+13. Google pop up & user authentication
+14. Use Firebase & Google API - User authentication - Sign In & out ability
+15. 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

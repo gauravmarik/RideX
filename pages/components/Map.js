@@ -6,7 +6,7 @@ mapboxgl.accessToken =
 	"pk.eyJ1IjoiZ21hcmlrIiwiYSI6ImNsMXo0c3h1czBkOHgzY3BldTU2aHM3cWgifQ.yJWY_PXMt6ARgitBtBs_7g";
 
 const Map = (props) => {
-	console.log(props);
+	// console.log(props);
 	useEffect(() => {
 		const map = new mapboxgl.Map({
 			container: "map",

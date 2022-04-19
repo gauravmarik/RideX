@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
 import { carList } from "../data/carList";
+console.log("line4 RideSelector");
 
 const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
-	const [rideDuration, setRideDuration] = useState("0");
+	console.log("inside rideSelector line 7");
+	const [rideDuration, setRideDuration] = useState(0);
 	// get ride duration from MapBox API
 	// 1. pickupCoordinates
 	// 2. dropoffCoordinates
@@ -14,8 +16,13 @@ const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
 		)
 			.then((res) => res.json())
 			.then((data) => {
-				// setRideDuration(data.routes[0]);
-				console.log(data.routes[0]);
+				setRideDuration(data.routes[0]?.duration/100);
+				// console.log(data, "inside useEfect line 20");
+
+				// if (rideDuration === 0) {
+				// 	setRideDuration(data.routes[0]?.duration / 100);
+				// 	console.log(data, "inside useEfect line 20");
+				// }
 			});
 	}, [pickupCoordinates, dropoffCoordinates]);
 	return (

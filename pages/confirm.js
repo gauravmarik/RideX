@@ -49,6 +49,7 @@ const Confirm = () => {
 			});
 	};
 	useEffect(() => {
+		console.log('[confirm.js] - get pickup coordinates')
 		getPickupCoordinates(pickup);
 		getDropoffCoordinates(dropoff);
 	}, [pickup, dropoff]);
