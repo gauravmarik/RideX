@@ -16,6 +16,21 @@
 14. Use Firebase & Google API - User authentication - Sign In & out ability
 15. 
 
+
+
+
+27Apr22
+1. Using nextJS, MapBox API, Google Firebase & Tailwind CSS, I am trying to build a ride hailing app similar to Uber. I built a login page with full user authentication using Firebase. 
+2. Once logged in it will take you to the home page to view the entire app - choose whether to take a ride, 2-wheeler or reserve
+3. After selecting, it takes you to the search page & asks where you want to go. So you can put in your pickup & drop off cities/locations
+4. Upon inputting locations, it takes you to the confirm page where it will tell which rides are available and also how much they cost based on the distance. 
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

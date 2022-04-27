@@ -16,7 +16,7 @@ const Login = () => {
     },[])
 	return (
 		<Wrapper>
-			<UberLogo src="https://i.ibb.co/n6LWQM4/Post.png" />
+			<UberLogo>RideX</UberLogo>
             <Title>Log in to access your account</Title>
             <HeadImage src='https://i.ibb.co/CsV9RYZ/login-image.png'/>
 			<SignInButton onClick={()=> signInWithPopup(auth, provider)}>Sign in Google</SignInButton>
@@ -34,8 +34,12 @@ const SignInButton = tw.button`
 bg-black text-white text-center py-4 mt-8 self-center w-full
 `;
 
-const UberLogo = tw.img`
-h-10 w-auto object-contain self-start 
+// const UberLogo = tw.img`
+// h-10 w-auto object-contain self-start 
+// `;
+
+const UberLogo = tw.div`
+font-sans text-6xl font-extrabold h-28 p-30
 `;
 
 const Title = tw.div`

@@ -32,9 +32,8 @@ export default function Home() {
 		<Wrapper>
 			<Map />
 			<ActionItems>
-				{/* Header */}
 				<Header>
-					<UberLogo src="https://i.ibb.co/84stgjq/uber-technologies-new-20218114.jpg" />
+					<UberLogo>RideX</UberLogo>
 					<Profile>
 						<Name>{user && user.name}</Name>
 						<UserImage src={user && user.photoUrl} onClick={()=> signOut(auth)} />
@@ -74,8 +73,8 @@ const Header = tw.div`
 flex justify-between items-center 
 `;
 
-const UberLogo = tw.img`
-h-28
+const UberLogo = tw.div`
+font-sans text-6xl font-extrabold h-28 p-30 mt-10 ml-5
 `;
 
 const Profile = tw.div`
