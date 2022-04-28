@@ -6,7 +6,7 @@ import tw from "tailwind-styled-components";
 import Map from "./components/Map";
 import Link from "next/link";
 import { auth } from '../firebase'
-import { onAuthStateChanged, signOut } from "firebase/auth";
+// import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useRouter } from 'next/router'
 
 export default function Home() {
@@ -15,21 +15,22 @@ export default function Home() {
 	const router = useRouter()
 
 
-	useEffect(() => {
-		return onAuthStateChanged(auth, user => {
-			if(user) {
-				setUser({
-					name: user.displayName,
-					photoUrl: user.photoURL,
-				})
-			} else {
-				setUser(null)
-				router.push('/login')
-			}
-		})
-	}, [])
+	// useEffect(() => {
+	// 	return onAuthStateChanged(auth, user => {
+	// 		// if(user) {
+	// 			setUser({
+	// 				name: user.displayName,
+	// 				photoUrl: user.photoURL,
+	// 			})
+	// 		// } 
+	// 		// else {
+	// 		// 	setUser(null)
+	// 		// 	router.push('/login')
+	// 		// }
+	// 	// })
+	// }, [])
 	return (
-		<Wrapper>
+		<Wrapper>``
 			<Map />
 			<ActionItems>
 				<Header>
@@ -103,4 +104,4 @@ h-3/5
 
 const InputButton = tw.div`
 h-20 bg-gray-200 text-2xl p-4 flex items-center mt-8
-`;
+`
