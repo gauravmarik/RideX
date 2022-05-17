@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
-import { carList } from "../../data/carList";
+import { carList } from "../data/carList";
 console.log("line4 RideSelector");
 
 const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
@@ -16,7 +16,7 @@ const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
 		)
 			.then((res) => res.json())
 			.then((data) => {
-				setRideDuration(data.routes[0]?.duration/100);
+				setRideDuration(data.routes[0]?.duration / 100);
 				// console.log(data, "inside useEfect line 20");
 
 				// if (rideDuration === 0) {
@@ -53,7 +53,7 @@ const Title = tw.div`
 text-gray-500 text-center text-xs py-2 border-b`;
 
 const CarList = tw.div`
-overflo-y-scroll
+overflow-y-scroll
 `;
 
 const Car = tw.div`

@@ -49,7 +49,7 @@ const Confirm = () => {
 			});
 	};
 	useEffect(() => {
-		console.log('[confirm.js] - get pickup coordinates')
+		console.log("[confirm.js] - get pickup coordinates");
 		getPickupCoordinates(pickup);
 		getDropoffCoordinates(dropoff);
 	}, [pickup, dropoff]);
@@ -58,8 +58,8 @@ const Confirm = () => {
 		<Wrapper>
 			<ButtonContainer>
 				<Link href="/search">
-				<BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
-                </Link>
+					<BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
+				</Link>
 			</ButtonContainer>
 			<Map
 				pickupCoordinates={pickupCoordinates}
@@ -90,6 +90,7 @@ flex-1 flex flex-col h-1/2`;
 const ConfirmButtonContainer = tw.div`
 border-t-2
 `;
+// have a look here...
 
 const ConfirmButton = tw.div`
 bg-black text-white my-4 mx-4 py-4 text-center text-xl
@@ -99,4 +100,4 @@ const ButtonContainer = tw.div`
 rounded-full absolute top-4 left-4 z-10 bg-white shadow-md cursor-pointer`;
 
 const BackButton = tw.img`
-h-full object-container`;
+h-full object-contain`;
