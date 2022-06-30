@@ -1,19 +1,17 @@
-import { useEffect, useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import tw from "tailwind-styled-components";
-import Map from "./components/Map";
-import Link from "next/link";
-import { auth } from '../firebase'
+import { useEffect, useState } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import tw from 'tailwind-styled-components';
+import Map from './components/Map';
+import Link from 'next/link';
+import { auth } from '../firebase';
 // import { onAuthStateChanged, signOut } from "firebase/auth";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 export default function Home() {
-
-	const [user, setUser] = useState(null)
-	const router = useRouter()
-
+	const [user, setUser] = useState(null);
+	const router = useRouter();
 
 	// useEffect(() => {
 	// 	return onAuthStateChanged(auth, user => {
@@ -22,7 +20,7 @@ export default function Home() {
 	// 				name: user.displayName,
 	// 				photoUrl: user.photoURL,
 	// 			})
-	// 		// } 
+	// 		// }
 	// 		// else {
 	// 		// 	setUser(null)
 	// 		// 	router.push('/login')
@@ -30,14 +28,17 @@ export default function Home() {
 	// 	// })
 	// }, [])
 	return (
-		<Wrapper>``
+		<Wrapper>
 			<Map />
 			<ActionItems>
 				<Header>
 					<UberLogo>RideX</UberLogo>
 					<Profile>
 						<Name>{user && user.name}</Name>
-						<UserImage src={user && user.photoUrl} onClick={()=> signOut(auth)} />
+						<UserImage
+							src={user && user.photoUrl}
+							onClick={() => signOut(auth)}
+						/>
 					</Profile>
 				</Header>
 
@@ -104,4 +105,4 @@ h-3/5
 
 const InputButton = tw.div`
 h-20 bg-gray-200 text-2xl p-4 flex items-center mt-8
-`
+`;

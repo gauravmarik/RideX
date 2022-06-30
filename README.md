@@ -1,36 +1,27 @@
 <!-- 15Apr My notes  -->
-1. Using nextJS, MapBox API, Google Firebase & Tailwind CSS, trying to build a ride hailing app similar to Uber. I built a login page with full user authentication using Firebase. 
+
+1. Using nextJS, MapBox API, Tailwind CSS, trying to build a ride hailing app similar to Uber.
 2. Once logged in it will take you to the home page to view the entire app - choose whether to take a ride, 2-wheeler or reserve
 3. After selecting, it takes you to the search page & asks where you want to go. So you can put in your pickup & drop off cities/locations
-4. Upon inputting locations, it takes you to the confirm page where it will tell which rides are available and also how much they cost based on the distance. 
+4. Upon inputting locations, it takes you to the confirm page where it will display as markers the locations on the map, tell you which rides are available and also how much they cost based on the distance. Have auto zoom to be able to zoom into the markers.
 
-1. Link the Back Button to go to the home page
-2. Create the Confirm Locations button
-3. Create the confirm page
-4. Plot a random point on a map
-5. Get Coordinates from a location 
-6. Add the pickup and dropoff as markers on the map
-7. Add a auto zoom to be able to zoom into the markers
-8. Pass in location data into confirm page
-9. Use the passed in data to put it on the map
-10. Create the HTML for the Ride Selector
-11. Add - Calculate the ride fare price
-12. Add a login
-13. Google pop up & user authentication
-14. Use Firebase & Google API - User authentication - Sign In & out ability
-15. 
-
-
-
+5. Link the Back Button to go to the home page
+6. Create the Confirm Locations button
+7. Create the confirm page
+8. Plot a random point on a map
+9. Get Coordinates from a location
+10. Add the pickup and dropoff as markers on the map
+11. Add a auto zoom to be able to zoom into the markers
+12. Pass in location data into confirm page
+13. Use the passed in data to put it on the map
+14. Create the HTML for the Ride Selector
+15. Add - Calculate the ride fare price
+16. Add a login
+17. Google pop up & user authentication
+18. Use Firebase & Google API - User authentication - Sign In & out ability
+19.
 
 <!-- 27Apr22 -->
-
-
-
-
-
-
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
